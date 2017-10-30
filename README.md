@@ -8,7 +8,7 @@ Flask-Tornado-Chat
 * **$** `cd Flask-Tornado-Chat`
 * **$** `virtualenv venv`
 * **$** `. venv/bin/activate`
-* **$** `pip install -r pipfile`
+* **$** `pip install -r requirements.txt`
 
 ## Use
 
@@ -24,4 +24,4 @@ Flask-Tornado-Chat
 
 * **$** `sudo apt-get install build-essential python-dev`
 * **$** `sudo yum install gcc python-devel`
-* **$** `pip install -I --ignore-installed -r pipfile`
+* **$** `pip install -I --ignore-installed -r requirements.txt`
