@@ -18,6 +18,10 @@ Flask-Tornado-Chat
 * `Ctrl/Cmd + c` to shut down server
 * **$** `deactivate` to leave virtualenv
 
+## Test
+
+* **$** `pytest`
+
 ## Trouble?
 
 ### "WARNING: The tornado.speedups extension module could not be compiled."
