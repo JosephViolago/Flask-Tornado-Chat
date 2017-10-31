@@ -4,7 +4,7 @@ from tornado.ioloop import PeriodicCallback,IOLoop
 from tornado.web import Application, FallbackHandler, StaticFileHandler
 from tornado.wsgi import WSGIContainer
 
-from flask_app import app
+from flask_app import app, db
 from chatserver import NowHandler
 
 
