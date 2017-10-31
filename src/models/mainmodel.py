@@ -1,4 +1,4 @@
-from usermodel import UserModel
+from .usermodel import UserModel
 
 class MainModel(object):
 	def __init__(self):
