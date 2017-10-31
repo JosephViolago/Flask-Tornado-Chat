@@ -8,7 +8,7 @@ class MainModel(object):
 		is_exists = self.user.is_exists(user_form["nickname"],
 									 user_form["email"])
 		if is_exists:
-			print "Signup error: User is already exists"
+			print("Signup error: User is already exists")
 			return False
 		else:
 			self.user.add(nickname=user_form["nickname"],
@@ -20,7 +20,7 @@ class MainModel(object):
 		data = self.user.get(email=login_form["login"])
 
 		if not data:
-			print "Login error: Empty data"
+			print("Login error: Empty data")
 			return False
 
 		user = data[0]

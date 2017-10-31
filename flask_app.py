@@ -20,7 +20,7 @@ cur.execute(sql1)
 cur.execute(sql)
 conn.commit()
 conn.close()
-print "Database created";
+print("Database created")
 #sys.path.append(u"/home/dimkonko/env/FlaskBlog")
 
 app = Flask(__name__)

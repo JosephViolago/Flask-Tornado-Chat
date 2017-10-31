@@ -32,19 +32,19 @@ class NowHandler(WebSocketHandler):
     rooms = list()
 
     rooms.append(Room("main", "Admin"))
-    
+
     @staticmethod
     def broadcast(user_room, msg):
         for room in NowHandler.rooms:
             if room.name == user_room:
                 room.broadcast(msg)
-    
+
     def open(self):
         NowHandler.clients.append(self)
-        print "Connected"
+        print("Connected")
 
     def on_message(self, message):
-        print message
+        print(message)
         message_dict = json.loads(message)
 
         if "new_user" in message_dict:
@@ -72,14 +72,14 @@ class NowHandler(WebSocketHandler):
         #     })
         # else:
     	   # NowHandler.broadcast({"message": message})
-        #print NowHandler.users
-    
+        #print(NowHandler.users)
+
     def on_close(self):
         counter = 0
         for item in NowHandler.clients:
             if item == self:
-                print "Closed for :"
-                print NowHandler.users[counter]
+                print("Closed for :")
+                print(NowHandler.users[counter])
                 del NowHandler.users[counter]
             counter += 1
         NowHandler.clients.remove(self)
