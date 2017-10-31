@@ -1,6 +1,8 @@
 Flask-Tornado-Chat
 ==================
 
+[![Build Status](https://travis-ci.org/JosephViolago/Flask-Tornado-Chat.svg?branch=travis-ci)](https://travis-ci.org/JosephViolago/Flask-Tornado-Chat)
+
 ## Install
 
 * **$** `sudo pip install virtualenv`
