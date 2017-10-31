@@ -1,4 +1,4 @@
-from usermodel import UserModel
+from .usermodel import UserModel
 
 class ChatModel(object):
 	def __init__(self):
