@@ -2,3 +2,4 @@ flask
 tornado
 redis
 pytest
+codecov
