@@ -20,7 +20,7 @@ Flask-Tornado-Chat
 
 ## Test
 
-* **$** `python test_web.py`
+* **$** `pytest`
 
 ## Trouble?
 
