@@ -27,7 +27,8 @@ install:
 
 # command to run tests
 script:
-  - pytest
+  - coverage run test_web.py
+  - coverage report -m
   # make coverage reports for Codecov to find
   - if [[ $TRAVIS_PYTHON_VERSION != nightly ]]; then coverage xml; fi
 
