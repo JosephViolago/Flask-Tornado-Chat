@@ -24,6 +24,8 @@ Flask-Tornado-Chat
 ## Test
 
 * **$** `pytest`
+* **$** `coverage run test_web.py`
+    * **$** `coverage report -m`
 
 ## Trouble?
 
