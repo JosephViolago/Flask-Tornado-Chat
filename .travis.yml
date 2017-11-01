@@ -1,3 +1,11 @@
+dist: trusty
+
+# Use containers instead of full VMs for faster startup.
+sudo: false
+
+matrix:
+    fast_finish: true
+
 language: python
 python:
   # - "2.6"
@@ -11,9 +19,19 @@ python:
   # - "3.6-dev" # 3.6 development branch
   # - "3.7-dev" # 3.7 development branch
   # - "nightly"
+
 # command to install dependencies
 install:
-  - pip install -r requirements.txt
+  - travis_retry pip install -r requirements.txt
+  - travis_retry pip install codecov
+
 # command to run tests
 script:
-  - pytest
+  - coverage run test_web.py
+  - coverage report -m
+  # make coverage reports for Codecov to find
+  - if [[ $TRAVIS_PYTHON_VERSION != nightly ]]; then coverage xml; fi
+
+after_success:
+    # call codecov from project root
+    - if [[ $TRAVIS_PYTHON_VERSION != nightly ]]; then cd ../ && codecov; fi

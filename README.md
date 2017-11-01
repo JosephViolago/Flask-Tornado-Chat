@@ -1,7 +1,8 @@
 Flask-Tornado-Chat
 ==================
 
-[![Build Status](https://travis-ci.org/JosephViolago/Flask-Tornado-Chat.svg?branch=travis-ci)](https://travis-ci.org/JosephViolago/Flask-Tornado-Chat)
+[![Build Status](https://travis-ci.org/JosephViolago/Flask-Tornado-Chat.svg?branch=master&style=shield)](https://travis-ci.org/JosephViolago/Flask-Tornado-Chat?branch=master)
+[![codecov](https://codecov.io/gh/JosephViolago/Flask-Tornado-Chat/branch/master/graph/badge.svg)](https://codecov.io/gh/JosephViolago/Flask-Tornado-Chat)
 
 ## Install
 
@@ -23,6 +24,8 @@ Flask-Tornado-Chat
 ## Test
 
 * **$** `pytest`
+* **$** `coverage run test_web.py`
+    * **$** `coverage report -m`
 
 ## Trouble?
 
